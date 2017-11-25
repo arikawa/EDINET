@@ -76,8 +76,8 @@ if __name__=='__main__':
         info_dict = get_link(ET_tree,namespace)
         dat_download[t_symbol] = info_dict
 
-        ofname = os.getcwd()+'/dat_download_'+t_symbol+'.json'
+        ofname = os.getcwd()+'\downloaded_info\dat_download_'+t_symbol+'.json'
         write_download_info(ofname)
 
-        directory_path = os.getcwd()+'/'
+        directory_path = os.getcwd()+'\\xbrl_files\\'
         download_all_xbrl_files(dat_download,directory_path)
